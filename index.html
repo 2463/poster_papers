@@ -3,70 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poster Papers</title>
+  <title>研究業績 - 高橋 大平</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center mb-8">Poster Papers</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project 1: meta -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-6">
-          <h2 class="text-2xl font-bold mb-2">META Project</h2>
-          <p class="text-gray-600 mb-4">
-            詳細はこちらのリンクをご覧ください:
-            <a href="projects/meta.html" class="text-blue-500 hover:underline">プロジェクトページ</a>
-          </p>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+  <div class="container mx-auto px-4 py-10">
+
+    <!-- Introduction -->
+    <header class="mb-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">量子AIの実用化を加速する、理論と実装を繋ぐ研究開発</h1>
+      <p class="text-lg text-gray-700 max-w-4xl mx-auto">
+        私の研究は、次世代のコア技術として期待される量子AI、特にその社会実装を阻む根源的な課題の解決に焦点を当てています。量子AIの学習が進まなくなる「勾配消失問題」をはじめとするボトルネックに対し、古典AI（深層学習）との融合、高性能シミュレーション技術、そして最先端の機械学習モデルを駆使して、理論と現実のコードのギャップを埋める実践的なソリューションを開発してきました。
+      </p>
+    </header>
+
+    <!-- Research Achievements -->
+    <section>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">研究業績</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Achievement 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold mb-3">【出発点】量子AIの最適化手法の探求と「古典AI融合」という有望な指針の発見</h3>
+            <p class="text-sm text-gray-500 mb-4">関連研究: メタヒューリスティクスと古典ニューラルネットワークを用いた量子最適化</p>
+            <div class="space-y-4 text-gray-700">
+              <p><strong class="font-semibold">背景:</strong> 量子AI実用化の障害「勾配消失問題」に対し、有望な最適化手法が不明でした。</p>
+              <p><strong class="font-semibold">アプローチ:</strong> 生物群の行動模倣や古典NNなど、複数アプローチを体系的に比較・評価しました。</p>
+              <p><strong class="font-semibold">成果:</strong> 古典NNを用いる手法が圧倒的な性能を示すことを発見し、研究の軸を「古典・量子AIの深い融合」へと定める根拠となりました。</p>
+            </div>
+            <a href="projects/meta.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
+          </div>
+          <div class="px-6 md:px-8 pb-6">
+            <iframe src="projects/meta.pdf" class="w-full h-96 rounded-md border"></iframe>
+          </div>
         </div>
-        <div class="px-6 pb-6">
-          <h3 class="text-xl font-semibold mb-2">PDF Preview</h3>
-          <iframe src="projects/meta.pdf" class="w-full h-96" style="border:none;"></iframe>
+
+        <!-- Achievement 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold mb-3">【発展】古典・量子AIの融合による学習障害「勾配消失問題」の克服</h3>
+            <p class="text-sm text-gray-500 mb-4">関連研究: Pretraining of PQC with VGON and g-sim</p>
+            <div class="space-y-4 text-gray-700">
+              <p><strong class="font-semibold">背景:</strong> 「古典AIとの融合」という知見に基づき、古典生成AIによる量子回路の事前学習に着手しました。</p>
+              <p><strong class="font-semibold">アプローチ:</strong> Python製シミュレータの性能ボトルネックを特定し、Rustで再実装。FFIを介してPythonのAIエコシステムと高速連携させました。</p>
+              <p><strong class="font-semibold">成果:</strong> シミュレーション時間を約1/20に短縮し、勾配消失問題を克服できることを実証。量子AI実用化へ大きな一歩を記しました。</p>
+            </div>
+            <a href="projects/vgon_gsim.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
+          </div>
+          <div class="px-6 md:px-8 pb-6">
+            <iframe src="projects/vgon_gsim.pdf" class="w-full h-96 rounded-md border"></iframe>
+          </div>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold mb-3">Transformerによる量子状態推定の安定化と高速化</h3>
+            <p class="text-sm text-gray-500 mb-4">関連研究: Improved Neural Quantum State Tomography with Teacher Forcing and Classical Shadow</p>
+            <div class="space-y-4 text-gray-700">
+              <p><strong class="font-semibold">背景:</strong> ニューラルネットワーク量子状態推定（NQS）は学習が不安定で収束が遅い課題がありました。</p>
+              <p><strong class="font-semibold">アプローチ:</strong> Transformerモデルを応用した「Pauli NQS」を考案。さらに学習初期の不安定さを解消するため「Teacher Forcing」を導入しました。</p>
+              <p><strong class="font-semibold">成果:</strong> 従来手法と比較して学習が大幅に高速化し、より安定して低い誤差を達成。深層学習の最先端技術を的確に応用できることを示しました。</p>
+            </div>
+            <a href="projects/nqs.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
+          </div>
+          <div class="px-6 md:px-8 pb-6">
+            <iframe src="projects/nqs.pdf" class="w-full h-96 rounded-md border"></iframe>
+          </div>
+        </div>
+
+        <!-- Achievement 4 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold mb-3">量子AIの学習障害「勾配消失問題」の理論的解明と解決策の提示</h3>
+            <p class="text-sm text-gray-500 mb-4">関連研究: 量子ニューラルネットワークにおける Barren Plateau と古典ニューラルネットワークの局所的最小値に関する考察</p>
+            <div class="space-y-4 text-gray-700">
+              <p><strong class="font-semibold">背景:</strong> 勾配消失問題に有効な「動的アルゴリズム」の理論的根拠がありませんでした。</p>
+              <p><strong class="font-semibold">アプローチ:</strong> QNNを「ユニタリ制約付き古典NN」と再解釈し、古典機械学習の視点から問題の構造を捉え直しました。</p>
+              <p><strong class="font-semibold">成果:</strong> 勾配消失の原因が「ユニタリ制約」自体にあると特定。「非ユニタリQNNモデル」が数学的に問題を起こさないことを証明し、実験でも検証しました。</p>
+            </div>
+            <a href="projects/gaiyousho.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
+          </div>
+          <div class="px-6 md:px-8 pb-6">
+            <iframe src="projects/研究概要書.pdf" class="w-full h-96 rounded-md border"></iframe>
+          </div>
         </div>
       </div>
-      <!-- Project 2: nqs -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-6">
-          <h2 class="text-2xl font-bold mb-2">NQS Project</h2>
-          <p class="text-gray-600 mb-4">
-            詳細はこちらのリンクをご覧ください:
-            <a href="projects/nqs.html" class="text-blue-500 hover:underline">プロジェクトページ</a>
-          </p>
-        </div>
-        <div class="px-6 pb-6">
-          <h3 class="text-xl font-semibold mb-2">PDF Preview</h3>
-          <iframe src="projects/nqs.pdf" class="w-full h-96" style="border:none;"></iframe>
-        </div>
-      </div>
-      <!-- Project 3: vgon_gsim -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-6">
-          <h2 class="text-2xl font-bold mb-2">VGON_GSIM Project</h2>
-          <p class="text-gray-600 mb-4">
-            詳細はこちらのリンクをご覧ください:
-            <a href="projects/vgon_gsim.html" class="text-blue-500 hover:underline">プロジェクトページ</a>
-          </p>
-        </div>
-        <div class="px-6 pb-6">
-          <h3 class="text-xl font-semibold mb-2">PDF Preview</h3>
-          <iframe src="projects/vgon_gsim.pdf" class="w-full h-96" style="border:none;"></iframe>
-        </div>
-      </div>
-      <!-- Project 4: 研究概要 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-6">
-          <h2 class="text-2xl font-bold mb-2">古典AIと量子AIの比較</h2>
-          <p class="text-gray-600 mb-4">
-            詳細はこちらのリンクをご覧ください:
-            <a href="projects/gaiyousho.html" class="text-blue-500 hover:underline">プロジェクトページ</a>
-          </p>
-        </div>
-        <div class="px-6 pb-6">
-          <h3 class="text-xl font-semibold mb-2">PDF Preview</h3>
-          <iframe src="projects/研究概要書.pdf" class="w-full h-96" style="border:none;"></iframe>
+    </section>
+
+    <!-- Other Achievements -->
+    <section class="mt-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">その他の業績</h2>
+      <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">表彰</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>優秀研究賞: 学部生時代に論文を査読付き論文誌に投稿したため．</li>
+              <li>特別研究賞: 修士1年次において国際学会で発表したため．</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">査読付き論文</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Taihei Takahashi, Noboru Watanabe, A Study of Noise Effect in Feedback Control with White Noise Analysis, OSID vol 31, 2024</li>
+              <li>Taihei Takahashi, Noboru Watanabe, A NOTE ON IMPROVED TREATMENT OF GAUSSIAN COMMUNICATION PROCESS, OSID Vol 28, 2021</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">国際学会発表</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Taihei Takahashi, Naoki Yamamoto, "Improved Neural Quantum State Tomography with Teacher Forcing and Classical Shadow", Joint Symposium on Quantum Computing, 2025.8 (Kanagawa, Japan)</li>
+              <li>Taihei Takahashi, Naoki Yamamoto, "Pretraining of PQC with VGON and g-sim", Joint Symposium on Quantum Computing, 2024.8 (Taipei, Taiwan)</li>
+              <li>Taihei Takahashi, Noboru Watanabe, Analysis of the effect of noise on feedbck with white noise analysis, SITA, 2022.12 (Hokkaido, Japan)</li>
+              <li>Taihei Takahashi, Noboru Watanabe, A new treatment of entropy of Gaussian communication process, QBIC, 2021.07 (Noda, Japan)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">国内学会発表</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Taihei Takahashi, Naoki Yamamoto, "Overparametrized 量子回路の DLAの次元の分析", 2024.03, Q-LEAP量子 AI 研究会, (大阪)</li>
+              <li>Taihei Takahashi, Naoki Yamamoto, "メタヒューリスティクスと古典ニューラルネットワークを用いた量子最適化", Q-LEAP学生研究会, 2025.03 (名古屋)</li>
+              <li>Taihei Takahashi, Noboru Watanabe, ガウス通信課程のエントロピーの新しい取扱, IEICE 情報理論研究会, 2021.07, (愛知,オンライン)</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="mt-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">総括：私の強みと貢献</h2>
+      <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-4xl mx-auto">
+        <ul class="space-y-4 text-lg">
+          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">課題発見・解決能力:</strong> プロジェクトの成功を阻む本質的な問題（実装上の性能ボトルネックから理論上の未解明な現象まで）を見抜く力。</div></li>
+          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">実装力と技術的胆力:</strong> Rustでの再実装やPython FFIの構築など、性能が求められる場面で最適なツールを選択し、最後までやり遂げる実装力。</div></li>
+          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">先端技術の応用力:</strong> Transformerのような深層学習の最新モデルを、量子計算という異なるドメインの課題解決のために応用・改良する柔軟な発想力。</div></li>
+          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">分野を横断する理論構築能力:</strong> 古典機械学習と量子物理学の知見を融合させ、新たな理論的枠組みを構築し、問題の根本原因を突き止める力。</div></li>
+        </ul>
+        <p class="mt-8 text-gray-700">
+          これらの「課題解決力」「実装力」「技術応用力」そして「理論構築能力」を活かし、貴社の事業が直面する困難な技術課題に対して、理論と実装の両面から貢献できると確信しております。
+        </p>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
