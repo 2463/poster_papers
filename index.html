@@ -13,7 +13,7 @@
     <header class="mb-16 text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">量子AIの実用化を加速する、理論と実装を繋ぐ研究開発</h1>
       <p class="text-lg text-gray-700 max-w-4xl mx-auto">
-        私の研究は、次世代のコア技術として期待される量子AI、特にその社会実装を阻む根源的な課題の解決に焦点を当てています。量子AIの学習が進まなくなる「勾配消失問題」をはじめとするボトルネックに対し、古典AI（深層学習）との融合、高性能シミュレーション技術、そして最先端の機械学習モデルを駆使して、理論と現実のコードのギャップを埋める実践的なソリューションを開発してきました。
+        私の研究は、次世代のコア技術として期待される量子AI、特にその社会実装を阻む根源的な課題の解決に焦点を当てています。量子AIの学習が進まなくなる「勾配消失問題」をはじめとするボトルネックに対し、古典AI（深層学習）との融合、高性能シミュレーション技術、そして最先端の機械学習モデルを駆使して、実践的なソリューションを開発してきました。
       </p>
     </header>
 
@@ -65,8 +65,8 @@
             <p class="text-sm text-gray-500 mb-4">関連研究: Improved Neural Quantum State Tomography with Teacher Forcing and Classical Shadow</p>
             <div class="space-y-4 text-gray-700">
               <p><strong class="font-semibold">背景:</strong> ニューラルネットワーク量子状態推定（NQS）は学習が不安定で収束が遅い課題がありました。</p>
-              <p><strong class="font-semibold">アプローチ:</strong> Transformerモデルを応用した「Pauli NQS」を考案。さらに学習初期の不安定さを解消するため「Teacher Forcing」を導入しました。</p>
-              <p><strong class="font-semibold">成果:</strong> 従来手法と比較して学習が大幅に高速化し、より安定して低い誤差を達成。深層学習の最先端技術を的確に応用できることを示しました。</p>
+              <p><strong class="font-semibold">アプローチ:</strong> Transformerモデルを応用した「Pauli NQS」を考案。さらに学習初期の不安定さを解消するため「Teacher Forcing」を導入できるよう、学習対象を変更しました</p>
+              <p><strong class="font-semibold">成果:</strong> 従来手法と比較して学習が大幅に高速化し、より安定して低い誤差を達成。深層学習の最先端技術の応用可能性を示しました。</p>
             </div>
             <a href="projects/nqs.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
           </div>
@@ -81,7 +81,7 @@
             <h3 class="text-2xl font-bold mb-3">量子AIの学習障害「勾配消失問題」の理論的解明と解決策の提示</h3>
             <p class="text-sm text-gray-500 mb-4">関連研究: 量子ニューラルネットワークにおける Barren Plateau と古典ニューラルネットワークの局所的最小値に関する考察</p>
             <div class="space-y-4 text-gray-700">
-              <p><strong class="font-semibold">背景:</strong> 勾配消失問題に有効な「動的アルゴリズム」の理論的根拠がありませんでした。</p>
+              <p><strong class="font-semibold">背景:</strong> 勾配消失問題に有効であると経験的に知られていた「動的アルゴリズム」の理論的根拠がありませんでした。これの理論的根拠とするべく研究を開始しました</p>
               <p><strong class="font-semibold">アプローチ:</strong> QNNを「ユニタリ制約付き古典NN」と再解釈し、古典機械学習の視点から問題の構造を捉え直しました。</p>
               <p><strong class="font-semibold">成果:</strong> 勾配消失の原因が「ユニタリ制約」自体にあると特定。「非ユニタリQNNモデル」が数学的に問題を起こさないことを証明し、実験でも検証しました。</p>
             </div>
@@ -140,7 +140,7 @@
       <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-4xl mx-auto">
         <ul class="space-y-4 text-lg">
           <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">課題発見・解決能力:</strong> プロジェクトの成功を阻む本質的な問題（実装上の性能ボトルネックから理論上の未解明な現象まで）を見抜く力。</div></li>
-          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">実装力と技術的胆力:</strong> Rustでの再実装やPython FFIの構築など、性能が求められる場面で最適なツールを選択し、最後までやり遂げる実装力。</div></li>
+          <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">実装力と技術的:</strong> Rustでの再実装やPython FFIの構築など、性能が求められる場面で最適なツールを選択し、最後までやり遂げる実装力。</div></li>
           <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">先端技術の応用力:</strong> Transformerのような深層学習の最新モデルを、量子計算という異なるドメインの課題解決のために応用・改良する柔軟な発想力。</div></li>
           <li class="flex items-start"><span class="font-bold text-blue-500 mr-3">✓</span><div><strong class="font-semibold">分野を横断する理論構築能力:</strong> 古典機械学習と量子物理学の知見を融合させ、新たな理論的枠組みを構築し、問題の根本原因を突き止める力。</div></li>
         </ul>
