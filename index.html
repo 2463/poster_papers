@@ -46,8 +46,10 @@
             <p class="text-sm text-gray-500 mb-4">関連研究: Pretraining of PQC with VGON and g-sim</p>
             <div class="space-y-4 text-gray-700">
               <p><strong class="font-semibold">背景:</strong> 「古典AIとの融合」という知見に基づき、古典生成AIによる量子回路の事前学習に着手しました。</p>
-              <p><strong class="font-semibold">アプローチ:</strong> Python製シミュレータの性能ボトルネックを特定し、Rustで再実装。FFIを介してPythonのAIエコシステムと高速連携させました。</p>
-              <p><strong class="font-semibold">成果:</strong> シミュレーション時間を約1/20に短縮し、勾配消失問題を克服できることを実証。量子AI実用化へ大きな一歩を記しました。</p>
+              <p><strong class="font-semibold">アプローチ:</strong>
+                古典生成 AI そのものを事前学習することによって，量子コンピュータを使用する回数を減らすことを目指しました．量子コンピュータの使用回数はコストに直接影響するため，できる限り量子コンピュータを使用しないことによって，手法全体の効率化を目指しました．
+              </p>
+              <p><strong class="font-semibold">成果:</strong> 古典シミュレーター `gsim` による古典ニューラルネットワークの事前学習か可能な領域内においては勾配消失問題を克服できることを実証。量子AI実用化へ大きな一歩を記しました。</p>
             </div>
             <a href="projects/vgon_gsim.html" class="inline-block bg-blue-500 text-white px-5 py-2 rounded-full mt-6 hover:bg-blue-600 transition-colors">プロジェクトページへ</a>
           </div>
